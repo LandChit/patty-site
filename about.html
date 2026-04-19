@@ -4,32 +4,60 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Patty</title>
+    <title>About PATTY</title>
     <meta name="description" content="About Patty and its mission to make personal finance easier." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="nav-wrap">
-            <a class="brand" href="index.html">Patty</a>
-            <nav aria-label="Primary">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+            <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Patty logo" />PATTY</a>
+            <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-label="Toggle navigation menu" />
+            <label for="nav-toggle" class="nav-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav" aria-label="Primary">
+                <a href="index.html">Overview</a>
+                <a href="features.html">Features</a>
+                <a class="current" href="about.html">About</a>
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="card">
-            <h1>About Patty</h1>
-            <p>
+        <section class="panel reveal">
+            <p class="eyebrow">ABOUT THE APP</p>
+            <h1 class="page-title">About PATTY</h1>
+            <p class="lead">
                 Patty is a personal finance application focused on practical day-to-day
                 money management. Our goal is to provide users with clear visibility
                 into spending, subscriptions, and savings progress.
             </p>
 
+            <section class="features" style="margin-top:1.4rem;">
+                <article class="tile">
+                    <h3>Fast Logging</h3>
+                    <p>Capture income and expense entries quickly so your records always stay up to date.</p>
+                </article>
+                <article class="tile alt">
+                    <h3>Recurring Control</h3>
+                    <p>Manage subscriptions and fixed inflows with clear due windows and wallet assignments.</p>
+                </article>
+                <article class="tile emphasis">
+                    <h3>Goal Momentum</h3>
+                    <p>Track savings progress with visual milestones and a practical plan you can keep.</p>
+                </article>
+            </section>
+            <br>
             <h2>Our Mission</h2>
             <p>
                 We believe financial tools should be understandable, efficient, and
@@ -43,11 +71,18 @@
                 <li>Security and privacy by default</li>
                 <li>Reliable features that solve real user needs</li>
             </ul>
+
+            <div class="actions">
+                <a class="button" href="features.html">See Full Feature Tour</a>
+                <a class="button secondary" href="privacy.html">Read Privacy Commitments</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Patty. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-card">
+            <p>© 2026 PATTY. Clean tools for real-world financial discipline.</p>
+        </div>
     </footer>
 </body>
 

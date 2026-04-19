@@ -4,17 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patty App | Official Site</title>
-    <meta name="description" content="Official website for Patty, a simple and modern app experience." />
+    <title>PATTY | Smart Practical Finance</title>
+    <meta name="description"
+        content="PATTY is a smart and practical personal finance app for tracking expenses, recurring subscriptions, and savings goals." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="nav-wrap">
-            <a class="brand" href="index.html">Patty</a>
-            <nav aria-label="Primary">
-                <a href="index.html">Home</a>
+            <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Patty logo" />PATTY</a>
+            <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-label="Toggle navigation menu" />
+            <label for="nav-toggle" class="nav-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav" aria-label="Primary">
+                <a class="current" href="index.html">Overview</a>
+                <a href="features.html">Features</a>
                 <a href="about.html">About</a>
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
@@ -22,25 +35,99 @@
     </header>
 
     <main>
-        <section class="card hero">
-            <h1>Smart Money Management, Built for Everyday Life</h1>
-            <p>
-                Patty is designed to help individuals manage their budgets, savings,
-                and recurring expenses in one clear and organized app.
-            </p>
-            <p>
-                This website provides official information about Patty, including our
-                company overview and privacy commitments.
-            </p>
-            <div class="actions">
-                <a class="button" href="about.html">Learn About Patty</a>
-                <a class="button secondary" href="privacy.html">Read Privacy Policy</a>
+        <section class="grid-two reveal">
+            <article class="panel hero-copy">
+                <p class="eyebrow">SMART AND PRACTICAL MONEY APP</p>
+                <h1>Simple, clear, and actionable personal finance.</h1>
+                <p class="lead">
+                    PATTY helps you track everyday spending, manage recurring subscriptions,
+                    and stay focused on savings goals without the clutter of traditional finance tools.
+                </p>
+                <div class="actions">
+                    <a class="button" href="features.html">Explore Features</a>
+                    <a class="button secondary" href="privacy.html">Privacy and Trust</a>
+                </div>
+            </article>
+
+            <article class="panel reveal reveal-delay-1" aria-label="App preview">
+                <p class="eyebrow">LIVE APP PREVIEW</p>
+                <h2 style="margin-top:0.4rem;">Overview Dashboard</h2>
+                <p class="lead" style="margin-top:0.6rem;">Built to surface your balance, goals, activity, and quick
+                    actions in one glance.</p>
+                <img class="screen-shot" src="assets/images/home_screen.png"
+                    alt="Patty overview screen with wallet balance and recent activity" />
+            </article>
+        </section>
+
+        <section class="features reveal reveal-delay-1">
+            <article class="tile alt">
+                <h3>Wallets</h3>
+                <p>Track multiple wallets and connected accounts while keeping your default spending source visible.</p>
+            </article>
+            <article class="tile">
+                <h3>Income and Expenses</h3>
+                <p>Review entries with category labels, dates, and clear positive or negative amounts in one feed.</p>
+            </article>
+            <article class="tile emphasis">
+                <h3>7-Day Analysis</h3>
+                <p>See your net cash flow trend and spending breakdown so habits are easier to understand.</p>
+            </article>
+        </section>
+
+        <section class="section-head reveal reveal-delay-2">
+            <h2>Recent Activity</h2>
+            <a href="features.html">View full list</a>
+        </section>
+        <section class="list-panel reveal reveal-delay-2" aria-label="Recent income and expenses">
+            <article class="entry">
+                <div>
+                    <h4>Sold PZ5</h4>
+                    <div class="meta">Apr 16, 2026 • Income</div>
+                </div>
+                <div class="amount income">+P17,600.00</div>
+            </article>
+            <article class="entry">
+                <div>
+                    <h4>Groceries</h4>
+                    <div class="meta">Apr 15, 2026 • Food</div>
+                </div>
+                <div class="amount expense">-P10,760.00</div>
+            </article>
+            <article class="entry">
+                <div>
+                    <h4>Tenant Recurring Income</h4>
+                    <div class="meta">Apr 15, 2026 • Monthly recurring</div>
+                </div>
+                <div class="amount income">+P7,500.00</div>
+            </article>
+        </section>
+
+        <section class="cta-strip reveal reveal-delay-2">
+            <div>
+                <h3>Ready to manage money with confidence?</h3>
+                <p>Start with your wallets, then set one savings goal and one recurring reminder.</p>
             </div>
+            <a class="button secondary" href="about.html">Learn More</a>
+        </section>
+
+        <section class="section-head reveal reveal-delay-2">
+            <h2>App Screens</h2>
+            <a href="features.html">Open feature walkthrough</a>
+        </section>
+        <section class="screen-grid reveal reveal-delay-2" aria-label="Patty app screenshots">
+            <img class="screen-shot" src="assets/images/home_screen.png" alt="Patty home overview screen" />
+            <img class="screen-shot" src="assets/images/analysis_screen.png"
+                alt="Patty analysis screen with spending insights" />
+            <img class="screen-shot" src="assets/images/reccuring_transactions_screen.png"
+                alt="Patty recurring transactions screen" />
+            <img class="screen-shot" src="assets/images/savings_screen.png" alt="Patty savings screen with goals" />
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Patty. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-card">
+            <p>© 2026 PATTY. Built for real-life money habits and long-term financial discipline.</p>
+        </div>
     </footer>
 </body>
 

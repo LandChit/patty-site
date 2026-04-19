@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patty Privacy Policy</title>
     <meta name="description" content="Privacy policy for Patty, including data handling commitments." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="nav-wrap">
-            <a class="brand" href="index.html">Patty</a>
-            <nav aria-label="Primary">
-                <a href="index.html">Home</a>
+            <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Patty logo" />PATTY</a>
+            <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-label="Toggle navigation menu" />
+            <label for="nav-toggle" class="nav-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav" aria-label="Primary">
+                <a href="index.html">Overview</a>
+                <a href="features.html">Features</a>
                 <a href="about.html">About</a>
-                <a href="privacy.html">Privacy Policy</a>
+                <a class="current" href="privacy.html">Privacy Policy</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="card">
-            <h1>Privacy Policy</h1>
+        <section class="panel reveal">
+            <p class="eyebrow">PRIVACY AND TRUST</p>
+            <h1 class="page-title">Privacy Policy</h1>
             <p><strong>Effective Date:</strong> April 12, 2026</p>
 
             <p>
@@ -83,8 +96,10 @@
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Patty. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-card">
+            <p>© 2026 PATTY. Your trust is part of the product.</p>
+        </div>
     </footer>
 </body>
 
