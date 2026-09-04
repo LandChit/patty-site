@@ -5,13 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patty Privacy Policy</title>
-    <meta name="description" content="Privacy policy for Patty, including data handling commitments." />
+    <meta name="description" content="Privacy policy for Patty, including data handling, advertising, and sync commitments." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        .policy h2 {
+            margin-top: 2rem;
+        }
+
+        .policy h3 {
+            margin-top: 1.4rem;
+            font-size: 1.02rem;
+        }
+
+        .policy ul {
+            margin: 0.6rem 0 0;
+            padding-left: 1.2rem;
+        }
+
+        .policy li {
+            margin-bottom: 0.35rem;
+        }
+
+        .policy a {
+            color: var(--accent);
+            word-break: break-word;
+        }
+
+        .policy .changelog {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,65 +66,207 @@
     </header>
 
     <main>
-        <section class="panel reveal">
+        <section class="panel reveal policy">
             <p class="eyebrow">PRIVACY AND TRUST</p>
             <h1 class="page-title">Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> April 12, 2026</p>
+            <p><strong>Effective Date:</strong> September 4, 2026</p>
 
             <p>
                 This Privacy Policy describes how Patty ("we," "our," or "us") handles
-                user information in connection with the Patty mobile application and
-                related services (collectively, the "Service").
+                user information in connection with the Patty mobile application, the
+                Patty web app, and related services (collectively, the "Service").
             </p>
 
             <h2>1. Data Collection and Use</h2>
             <p>
-                At this time, Patty does not collect personal data from users for
-                storage, sale, or profiling purposes. We do not sell user data and do
-                not disclose user information to unrelated third parties for
-                advertising purposes.
+                Patty is a personal finance app, and your financial data belongs to
+                you. We do not sell user data, and we do not use your financial
+                information for advertising or profiling.
             </p>
+            <p>
+                Patty works offline by default: transactions, balances, wallets,
+                categories, savings goals, and budgets are stored on your device. The
+                following information is collected or processed only in the specific
+                circumstances described below:
+            </p>
+            <ul>
+                <li>
+                    <strong>Account information.</strong> If you sign in with Google, we
+                    receive your name, email address, and profile picture from Google in
+                    order to identify your account.
+                </li>
+                <li>
+                    <strong>Synced financial data.</strong> If you enable cloud sync, your
+                    financial records and any profile image you upload are transmitted to
+                    and stored on our backend at <code>pattyapi.landchit.dev</code> so
+                    that they can be restored and kept consistent across your devices.
+                </li>
+                <li>
+                    <strong>Purchase information.</strong> Subscriptions are processed by
+                    Google Play Billing. We receive the purchase and entitlement
+                    information needed to determine whether your subscription is active.
+                    We never receive your payment card details.
+                </li>
+                <li>
+                    <strong>Advertising data.</strong> The free version of the Android app
+                    shows ads. See section 4 for exactly what is collected and by whom.
+                </li>
+            </ul>
 
-            <h2>2. Future Features</h2>
+            <h2>2. On-Device Processing</h2>
             <p>
-                Patty may introduce future features requiring limited user identity
-                information, such as a shared wallet capability. As of the effective
-                date of this policy, shared wallets are not implemented.
-            </p>
-            <p>
-                If and when shared wallets become available, we expect to use Google
-                services (including Google Sign-In) to authenticate users. In that
-                scenario, Patty would only process the minimum information necessary to
-                identify participating users and enable wallet sharing with the intended
-                recipients.
+                Receipt scanning and the AI features that interpret your entries run
+                entirely on your device. Receipt images are processed locally by
+                on-device OCR and an on-device language model. Receipt photos are not
+                uploaded to our servers, and they are not sent to any third-party AI
+                provider.
             </p>
 
             <h2>3. Third-Party Services</h2>
             <p>
-                Where Google services are used, Google may process information under
-                its own terms and privacy policies. Patty does not sell or share user
-                information with other third parties beyond what is required to operate
-                the Service securely and as intended.
+                Patty uses the following third-party services, each of which may process
+                information under its own terms and privacy policy:
             </p>
-
-            <h2>4. Data Sharing Commitment</h2>
+            <ul>
+                <li>
+                    <strong>Google Sign-In</strong> &mdash; authentication.
+                </li>
+                <li>
+                    <strong>Google Play Billing</strong> &mdash; subscription purchases and
+                    entitlement checks.
+                </li>
+                <li>
+                    <strong>Google AdMob</strong> &mdash; banner advertising in the free
+                    version of the Android app, as described in section 4.
+                </li>
+            </ul>
             <p>
-                We do not share user information with third parties for marketing,
-                brokerage, or unrelated commercial purposes.
+                For details on how Google handles this information, see
+                <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer"
+                    target="_blank">How Google uses information from sites or apps that use our services</a>
+                and the
+                <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy
+                    Policy</a>.
             </p>
 
-            <h2>5. Policy Updates</h2>
+            <h2>4. Advertising</h2>
+            <p>
+                The free version of the Patty mobile app displays banner advertisements
+                supplied by Google AdMob. To serve these ads, Google may collect and
+                process:
+            </p>
+            <ul>
+                <li>your device's advertising identifier (Android Advertising ID);</li>
+                <li>your IP address, and an approximate location derived from it;</li>
+                <li>
+                    device information such as model, operating system version, and
+                    language;
+                </li>
+                <li>interactions with the ads shown (impressions and clicks).</li>
+            </ul>
+            <p>
+                This information is processed by Google as an independent controller
+                under its own terms, linked in section 3.
+            </p>
+
+            <h3>What we never send to advertisers</h3>
+            <p>
+                Patty does not share your financial information with Google or any
+                advertising network. Your transactions, balances, wallets, categories,
+                merchant names, savings goals, and budgets are never used as ad
+                targeting signals, are never attached to an ad request, and never leave
+                the app for advertising purposes.
+            </p>
+
+            <h3>Where ads appear</h3>
+            <p>
+                Ads are shown only in the Android app. The Patty web app displays no
+                advertising.
+            </p>
+
+            <h3>Removing ads</h3>
+            <p>
+                Ads are not shown to users with an active Patty Cloud subscription.
+            </p>
+
+            <h2>5. Your Choices About Advertising</h2>
+            <p>
+                <strong>Consent.</strong> Where required by law, including in the
+                European Economic Area, the United Kingdom, and Switzerland, you are
+                asked for your consent before any personalised advertising is requested.
+                This request is presented by Google's User Messaging Platform before any
+                ad is loaded.
+            </p>
+            <p>
+                <strong>Advertising ID.</strong> You can review your ad settings, reset
+                your advertising identifier, or delete it entirely from Android Settings
+                &rarr; Privacy &rarr; Ads. Deleting it prevents apps from using it to
+                build an advertising profile. These controls also let you opt out of ad
+                personalisation on your device.
+            </p>
+            <p>
+                <strong>Subscription.</strong> Advertising is removed entirely for Patty
+                Cloud subscribers.
+            </p>
+
+            <h2>6. Data Sharing Commitment</h2>
+            <p>
+                We do not sell user information, and we do not share it with data
+                brokers or for unrelated commercial purposes. The only information
+                shared with third parties is what is described in sections 1, 3, and 4:
+                authentication data with Google Sign-In, purchase data with Google Play
+                Billing, and the advertising data listed in section 4 with Google AdMob.
+                Your financial records are never included in any of this.
+            </p>
+
+            <h2>7. Children</h2>
+            <p>
+                Patty is not directed at children. The Service is intended for users
+                aged 13 and over, and we do not knowingly collect personal information
+                from children. If you believe a child has provided us with personal
+                information, please contact us and we will delete it.
+            </p>
+
+            <h2>8. Future Features</h2>
+            <p>
+                Patty may introduce future features requiring limited user identity
+                information, such as a shared wallet capability. As of the effective
+                date of this policy, shared wallets are not implemented. If and when
+                they become available, Patty would only process the minimum information
+                necessary to identify participating users and enable wallet sharing with
+                the intended recipients.
+            </p>
+
+            <h2>9. Policy Updates</h2>
             <p>
                 We may update this Privacy Policy to reflect operational, legal, or
-                product changes. Any updated version will be posted on this page with
-                a revised effective date.
+                product changes. Any updated version will be posted on this page with a
+                revised effective date, and material changes will be noted in the
+                change log below.
             </p>
 
-            <h2>6. Contact</h2>
+            <h2>10. Contact</h2>
             <p>
-                For privacy-related inquiries, please contact us through the official
-                Patty support channel.
+                For privacy-related inquiries, including requests to access or delete
+                your data, contact us at
+                <a href="mailto:lance@landchit.dev">lance@landchit.dev</a>.
             </p>
+
+            <div class="changelog">
+                <h2>Change Log</h2>
+                <p>
+                    <strong>September 4, 2026</strong> &mdash; Disclosed banner advertising
+                    via Google AdMob in the free Android app, and added a section on your
+                    advertising choices. Also updated the policy to describe features that
+                    had already shipped: Google Sign-In, cloud sync of financial data and
+                    profile images, and Google Play Billing subscriptions. Added a
+                    statement that receipt scanning runs on-device, a statement that the
+                    app is not directed at children, and a direct contact address.
+                </p>
+                <p>
+                    <strong>April 12, 2026</strong> &mdash; Initial version.
+                </p>
+            </div>
         </section>
     </main>
 
